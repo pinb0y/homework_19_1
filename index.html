@@ -198,7 +198,7 @@
     <h1 class="visually-hidden">Меню</h1>
 
     <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <a href="#" class="nav-link active" aria-current="page">
             <svg class="bi me-2" width="40" height="32">
                 <use xlink:href="#bootstrap"/>
             </svg>
@@ -288,23 +288,29 @@
 
                 </div>
                 <div class="col-8">
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Имя</label>
-                            <input name="name" type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputemail1" class="form-label">Email</label>
-                            <input name="email" type="email" class="form-control" id="exampleInputemail1">
-                        </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Имя</label>
+                                    <input name="name" type="text" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputemail1" class="form-label">Email</label>
+                                    <input name="email" type="email" class="form-control" id="exampleInputemail1">
+                                </div>
 
-                        <button type="submit" class="btn btn-success">Отправить</button>
-                    </form>
+                                <button type="submit" class="btn btn-success">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </main>
         <main class="row">
             <div class="row text-center">
+                <p class="h2 mb-2 mt-2">FAQ</p>
                 <div class="col-4">
                     <p class="d-inline-flex gap-1">
 
@@ -368,6 +374,57 @@
 
 
                 </div>
+            </div>
+        </main>
+        <main class="row">
+            <div class="row text-center">
+                <table class="table mb-4 mt-4">
+                    <thead>
+                    <tr>
+                        <th scope="col">Номер заказа</th>
+                        <th scope="col">Название товара</th>
+                        <th scope="col">Цена за штуку</th>
+                        <th scope="col">Количество</th>
+                        <th scope="col">Итоговая сумма</th>
+                        <th scope="col">Статус заказа</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>dildo</td>
+                        <td>700</td>
+                        <td>1</td>
+                        <td>700</td>
+                        <td class="table-primary">Новый</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>orange</td>
+                        <td>100</td>
+                        <td>5</td>
+                        <td>500</td>
+                        <td class="table-warning">Обработка</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>suite</td>
+                        <td>5000</td>
+                        <td>2</td>
+                        <td>10000</td>
+                        <td class="table-info">Обработан</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>barbie</td>
+                        <td>2000</td>
+                        <td>3</td>
+                        <td>6000</td>
+                        <td class="table-danger">Отмена</td>
+                    </tr>
+                    </tbody>
+                </table>
+
             </div>
         </main>
     </div>
